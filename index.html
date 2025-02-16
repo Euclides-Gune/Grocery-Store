@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+</head>
+<body>
+    
+    <nav>
+        <div class="icon">
+            <span class="material-symbols-outlined basket">
+                shopping_basket
+                </span>        
+            <span class="logo">Grocery</span>
+        </div>
+
+        <ul class="links">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+
+        <ul class="utilities">
+            <li><span id="show-links" class="material-symbols-outlined">
+                menu
+                </span></li>
+            <li><span class="material-symbols-outlined cart-button">
+                shopping_cart
+                </span></li>
+        </ul>
+    </nav>
+
+    <header id="header">
+
+        <div class="cart-products-list">
+            <div class="cart-products">
+            </div>
+
+            <div class="checkout">
+                <h2>Total: $<span>0</span> </h2>
+                <button class="checkout-btn"><a href="./checkout.html" class="link-btn" target="_blank">Checkout</a></button>
+            </div>
+        </div>
+
+        <img src="./assets/imagens/vegetable-basket.png" alt="" class="vegetables-basket-header">
+
+        <div class="content">
+            <h1>Fresh And <span class="organic">Organic</span> Products For You</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Saepe aperiam mollitia cupiditate nam. Et ratione quod <br>voluptates, amet obcaecati voluptas dolorum <br>provident expedita. Quae, voluptates aliquid <br>amet explicabo maxime quo.</p>
+            <button><a href="#products" class="link-btn">Shop Now!</a></button>
+        </div>
+
+        <img src="./assets/imagens/fruits.png" alt="" class="fruits-header">
+
+    </header>
+
+    <div id="features" class="features-box">
+        <div class="features">
+            <div class="features-title">
+                <h1>Our <span class="features-span">Features</span></h1>
+            </div>
+    
+            <div class="features-cards">
+                <div class="features-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/fresh-food-card.jpg" alt=""></div>
+                    <div class="description">
+                    <h3>Fresh and organic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam rerum veniam eum harum dolore earum</p>
+                    <button><a href="./read.html" class="link-btn" target="_blank">Read More</a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/delivery-icon.png" alt=""></div>
+                    <div class="description">
+                        <h3>Free Delivery </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam rerum veniam eum harum dolore earum</p>
+                    <button><a href="./read.html" class="link-btn" target="_blank">Read More</a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/payment-card.png" alt=""></div>
+                    <div class="description">
+                        <h3>Easy payment</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam rerum veniam eum harum dolore earum</p>
+                    <button><a href="./read.html" class="link-btn" target="_blank">Read More</a></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div id="products" class="products-box">
+
+        <div class="products-title">
+            <h1>Our <span class="products-span">Products</span></h1>
+        </div>
+
+        <div class="products">
+    
+            <div class="products-cards">
+
+                <div class="products-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/cabbage-product.webp" alt=""></div>
+                    <div class="description">
+                        <h2>Fresh Cabbage </h2>
+                        <h4 class="product-price">$<span>4.99</span> - kg</h4>
+                    <button type="submit" class="product-btn" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                    </div>
+            </div>
+
+                <div class="products-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/orange-product.jpeg" alt=""></div>
+                    <div class="description">
+                        <h2>Fresh Orange </h2>
+                        <h4 class="product-price">$<span>4.99</span> - kg</h4>
+                    <button class="product-btn" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/onion-product.webp" alt=""></div>
+                    <div class="description">
+                        <h2>Fresh Onion </h2>
+                        <h4 class="product-price">$<span>2.99</span> - kg</h4>
+                    <button class="product-btn" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/carrot-product.webp" alt=""></div>
+                    <div class="description">
+                        <h2>Fresh Carrot </h2>
+                        <h4 class="product-price">$<span>4.99</span> - kg</h4>
+                    <button class="product-btn" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/green-lemon-product.webp" alt=""></div>
+                    <div class="description">
+                        <h2>Green Lemon </h2>
+                        <h4 class="product-price">$<span>3.99</span> - kg</h4>
+                    <button class="product-btn" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                    </div>
+                </div> 
+
+                <div class="products-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/meat-product.jpeg" alt=""></div>
+                    <div class="description">
+                        <h2>Fresh Meat </h2>
+                    <h4 class="product-price">$<span>4.99</span> - kg</h4>
+                    <button class="product-btn" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>    
+
+
+    <div id="categories" class="categories-box">
+        <div class="features">
+            <div class="features-title">
+                <h1>Our <span class="features-span">Categories</span></h1>
+            </div>
+    
+            <div class="categories-cards">
+                <div class="features-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/fresh-meat-category.webp" alt=""></div>
+                    <div class="description">
+                    <h3>Fresh Meat</h3>
+                    <p>Upto 45% off</p>
+                    <button><a href="./read.html" class="link-btn" target="_blank">Read More</a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/daily-products-category.jpg" alt=""></div>
+                    <div class="description">
+                        <h3>Daily Products </h3>
+                    <p>Upto 45% off</p>
+                    <button><a href="./read.html" class="link-btn" target="_blank">Read More</a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/fruits-category.jpeg" alt=""></div>
+                    <div class="description">
+                        <h3>Fresh fruits</h3>
+                    <p>Upto 45% off</p>
+                    <button><a href="./read.html" class="link-btn" target="_blank">Read More</a></button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="features-card">
+                    <div class="line">
+                        <div class="images"><img src="./assets/imagens/vegetables-category.webp" alt=""></div>
+                    <div class="description">
+                        <h3>Fresh vegetables</h3>
+                    <p>Upto 45% off</p>
+                    <button><a href="./read.html" class="link-btn" target="_blank">Read More</a></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <footer id="contacts">
+        <div class="contact-cards">
+
+            <div class="contact-card">
+                <h1>Grocery <span class="material-symbols-outlined basket">
+                    shopping_basket
+                    </span></h1>
+                    
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque mollitia pariatur similique vitae illum asperiores deserunt beatae facilis facere blanditiis non amet ratione, explicabo minus, eius eveniet culpa, est consectetur?</p>
+                <div class="social-media">
+                    <div><a href="mailto:euclidesgune10@gmail.com" target="_blank"><span class="material-symbols-outlined email">
+                        mail
+                        </span></a> - Email us</div>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h1>Contact Info</h1>
+                <div class="address">
+                    <div><span class="material-symbols-outlined">
+                        call
+                        </span> +258 87 649 4529</div>
+                    <div><span class="material-symbols-outlined">
+                        call
+                        </span> +258 82 706 0382</div>
+                    <div><span class="material-symbols-outlined">
+                        location_on
+                        </span> Maputo, Mozambique</div>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h1>Quick Links</h1>
+                <ul class="quick-links">
+                    <li><span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                        <a href="#header">Home</a></li>
+                    <li><span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                        <a href="#features">Features</a></li>
+                    <li><span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                        <a href="#products">Products</a></li>
+                    <li><span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                        <a href="#categories">Categories</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
