@@ -5,6 +5,7 @@ let navbar = document.getElementsByTagName('nav')[0];
 showListBtn.addEventListener('click', () => {
     if(linksList.style.display == "none") {
         navbar.style.height = '120px';
+        navbar.style.paddingRight = '20px';
         linksList.style.display = 'block';
     } else {
         navbar.style.height = '50px';
