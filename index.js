@@ -38,7 +38,7 @@ function addToCart(element) {
                 <img src="${image}" alt="">
 
                 <div class="details">
-                    <span class="cart-name">${title}</span>
+                    <span class="cart-name">${title} - <span>${price}</snpan></span>
                 <span class="material-symbols-outlined remove" onclick="removeProduct(this)">
                     delete
                 </span>
@@ -46,11 +46,15 @@ function addToCart(element) {
             </div>`;
     total += price;
     displayTotal.textContent = total;
+    alert('You added an item to the cart');
+
 }
 
 function removeProduct(element) {
-    let product = element.parentElement.parentElement;
-
+    let product = element.parentElement.parentElement.parentElement;
+    let price = Number(element.parentElement.children[0].textContent);
+    total -= price;
+    displayTotal.textContent = total;
     product.remove();
-
+    alert('You removed an item from the cart')
 }
