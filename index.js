@@ -29,6 +29,8 @@ let displayTotal = document.getElementsByClassName('cart-products-list')[0].chil
 
 let total = Number(document.getElementsByClassName('cart-products-list')[0].children[1].children[0].children[0].textContent);
 
+let cartCount = document.getElementsByClassName('count')[0];
+
 function addToCart(element) {
     let image = element.parentElement.parentElement.children[0].children[0].getAttribute('src');
     let title = element.parentElement.children[0].textContent;
@@ -44,10 +46,9 @@ function addToCart(element) {
                 </span>
                 </div>
             </div>`;
+    cartCount.textContent = cartProducts.children.length;
     total += price;
     displayTotal.textContent = total;
-    alert('You added an item to the cart');
-
 }
 
 function removeProduct(element) {
@@ -56,5 +57,5 @@ function removeProduct(element) {
     total -= price;
     displayTotal.textContent = total;
     product.remove();
-    alert('You removed an item from the cart')
+    cartCount.textContent = cartProducts.children.length;
 }

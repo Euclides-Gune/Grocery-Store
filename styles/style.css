@@ -88,21 +88,44 @@ a:hover {
     cursor: pointer;
 }
 
-header {
+.cart-box {
     position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 7.5px;
+    color: white;
+    background-color:orange;
+}
+
+.cart-button {
+    position: absolute;
+    bottom: 0;
+}
+
+header {
     background-color: white;
     display: flex;
     padding: 50px 0px;
-    margin-top: 99px;
+    margin-top: 90px;
 }
 
 .cart-products-list {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: white;
     box-shadow: 1px 1px 2px 2px rgb(148, 148, 148);
     right: 20px;
-    top: 0;
+    top: 100px;
 }
 
 .cart-product {
